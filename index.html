@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2008 BMW 535xi Sport Wagon (E61) — For Sale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F3F1EC;
+  --bg-panel: #FFFFFF;
+  --ink: #16181A;
+  --ink-soft: #565C61;
+  --line: #DCD9D2;
+  --blue: #1C5FC2;
+  --amber: #A6650C;
+  --amber-bg: #FBF1E1;
+  --amber-line: #E3B15C;
+  --radius: 4px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em 0;
+}
+a { color: var(--blue); }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+
+/* NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(243, 241, 236, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.nav-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.nav-links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-links a.disclosure-link { color: var(--amber); }
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 62vh;
+  min-height: 420px;
+  max-height: 640px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(22,24,26,0) 30%, rgba(22,24,26,0.82) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+  width: 100%;
+  color: #fff;
+}
+.hero-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.hero-sub {
+  font-size: 1rem;
+  color: #E8E6E0;
+  margin-bottom: 20px;
+}
+.spec-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.spec-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  color: #fff;
+}
+.spec-chip b { font-weight: 600; opacity: 0.75; margin-right: 6px; }
+
+/* CONTENT */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+section {
+  margin-bottom: 64px;
+  scroll-margin-top: 70px;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+.section-head .num {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+.section-head h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.prose h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.prose h4:first-child { margin-top: 0; }
+.prose ul {
+  margin: 0 0 4px 0;
+  padding-left: 1.2em;
+}
+.prose li {
+  margin-bottom: 7px;
+  color: #2A2D30;
+}
+.prose p {
+  margin: 0 0 14px 0;
+  color: #2A2D30;
+}
+.overview-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+
+/* GALLERY */
+.gallery-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 32px 0 12px;
+  display: block;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.photo-card {
+  margin: 0;
+  cursor: pointer;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.photo-card:hover, .photo-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(22,24,26,0.12);
+  outline: none;
+}
+.photo-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+.photo-card figcaption {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+
+/* DISCLOSURE SECTION - signature module */
+.disclosure-section {
+  background: var(--amber-bg);
+  border: 1px solid var(--amber-line);
+  border-radius: var(--radius);
+  padding: 0;
+  overflow: hidden;
+}
+.hazard-bar {
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--amber),
+    var(--amber) 12px,
+    #1a1a1a 12px,
+    #1a1a1a 24px
+  );
+  opacity: 0.85;
+}
+.disclosure-inner {
+  padding: 28px 32px 36px;
+}
+.disclosure-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 6px;
+  border: none;
+  padding-bottom: 0;
+}
+.disclosure-head h2 {
+  color: var(--amber);
+  font-size: 1.5rem;
+}
+.disclosure-stamp {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1.5px solid var(--amber);
+  color: var(--amber);
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  transform: rotate(-2deg);
+  white-space: nowrap;
+}
+.disclosure-intro {
+  color: #3A2E15;
+  max-width: 68ch;
+  margin-bottom: 24px;
+}
+.disclosure-list {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.disclosure-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 12px 0;
+  border-top: 1px solid rgba(166,101,12,0.22);
+}
+.disclosure-row:first-child { border-top: none; }
+.d-status {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--amber);
+  border: 1px solid var(--amber-line);
+  background: rgba(255,255,255,0.5);
+  border-radius: var(--radius);
+  padding: 3px 8px;
+  height: fit-content;
+  white-space: nowrap;
+}
+.d-desc { color: #2E2410; font-size: 0.94rem; }
+.d-desc b { color: #1a1408; }
+
+.disclosure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.disclosure-card {
+  margin: 0;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid var(--amber-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.disclosure-card:hover, .disclosure-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(166,101,12,0.18);
+  outline: none;
+}
+.disclosure-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+.disclosure-card figcaption {
+  padding: 10px 12px 14px;
+}
+.d-title {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #2E2410;
+  margin-bottom: 4px;
+}
+.d-tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--amber);
+  background: rgba(166,101,12,0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+.d-text {
+  display: block;
+  font-size: 0.8rem;
+  color: #4A3D22;
+  line-height: 1.45;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 24px 48px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.94);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lightbox.open { display: flex; }
+.lightbox-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: 74vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+.lightbox-caption {
+  color: #E8E6E0;
+  font-size: 0.9rem;
+  margin-top: 14px;
+  text-align: center;
+  max-width: 70ch;
+}
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: absolute;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-close { top: 20px; right: 20px; }
+.lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); }
+.lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); }
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.2); }
+
+@media (max-width: 640px) {
+  .disclosure-row { grid-template-columns: 1fr; }
+  .content { padding: 40px 16px; }
+  .lightbox-prev, .lightbox-next { width: 38px; height: 38px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">535xi &middot; E61 Touring</div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#interior">Interior</a>
+      <a href="#exterior">Exterior</a>
+      <a href="#powertrain">Powertrain</a>
+      <a href="#electronics">Electronics</a>
+      <a href="#disclosure" class="disclosure-link">Disclosure</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="images/IMG_1833.jpeg" alt="2008 BMW 535xi Touring rear three-quarter view">
+  <div class="hero-content">
+    <div class="hero-eyebrow">For Sale &middot; Private Party</div>
+    <h1>2008 BMW 535xi Sport Wagon</h1>
+    <div class="hero-sub">E61 Touring &middot; N54 Twin-Turbo &middot; xDrive AWD &middot; 133,540 miles</div>
+    <div class="spec-strip">
+      <div class="spec-chip"><b>VIN</b>WBAPT73588CX01883</div>
+      <div class="spec-chip"><b>Mileage</b>133,540</div>
+      <div class="spec-chip"><b>Title</b>Clean VA</div>
+      <div class="spec-chip"><b>Inspection</b>Exp. Feb 2027</div>
+      <div class="spec-chip"><b>Paint</b>Titanium Silver Metallic (354)</div>
+      <div class="spec-chip"><b>Interior</b>Gray Dakota Leather</div>
+      <div class="spec-chip"><b>Wheels</b>Style 237</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <section id="overview">
+    <div class="section-head"><span class="num">01</span><h2>Overview</h2></div>
+    <div class="overview-box prose">
+      <p>There are two accidents that I am aware of from before I owned the vehicle. The first one, the previous owner hit a deer sometime around 2020 and had body work done on the front bumper, driver’s fender, hood, and driver’s side headlight. The second one, his wife backed into the side of their garage while attempting to park. This caused some damage to the right rear quarter of the car which has not been repaired - <a href="#right-side">details below</a>.</p>
+<p>I purchased the car in 2024 from a gentleman out near Smith Mountain Lake. He had a whole stack of service records and receipts from his ownership but was unwilling to give them to me with the car (I found this somewhat strange, but I believe he had privacy concerns regarding the paperwork). The car had appx. 124,000 miles on it at the time of my purchase. </p>
+<p>The car runs and drives well. It never hesitates to start, stumbles, or otherwise indicates that it’s unhappy in any way. My primary reason for selling is that I simply prefer the driving dynamics of the 3-series more than the slightly more comfort-focused 5-series, and would like to acquire a 3-series wagon instead.</p>
+    </div>
+  </section>
+
+  <section id="interior">
+    <div class="section-head"><span class="num">02</span><h2>Interior</h2></div>
+    <div class="prose"><h4>Front</h4>
+<ul>
+<li>Gray dakota leather standard seats, in very good shape. No cracks, tears, or bare spots. Normal wear as expected for age on driver’s seat bolsters, but still cleans up and presents well.   </li>
+<li>All power functions of the two front seats work as expected. The car also has heated seats which work well (they get hot way faster than the seats in my E90 or E46).   </li>
+<li>Center armrest leather in good shape, some wear visible but leather is all intact and cleans nicely. The sliding portion of the armrest works correctly.  </li>
+<li>Dashboard and center console in good shape, all vents work as expected, all buttons work (nothing sticks, etc), both cupholders work as expected  </li>
+<li>Carpet is in good shape, with a few light stains in places. The car has BMW all-weather mats in the front which are in good shape and have done a nice job of protecting the carpet underneath.  </li>
+<li>Standard multifunction steering wheel is in good condition, all multifunction buttons work, no tears or gouges in wheel. Some minor wear as expected for age.   </li>
+<li>Both front door panels are in good condition and all of the switches for windows, mirrors, etc work as expected.  </li>
+<li>Both front windows work as expected, including one-touch up/down.  </li>
+<li>The auto-dimming rear-view mirror works as expected.</li>
+</ul>
+<h4>Back</h4>
+<ul>
+<li>Gray Dakota leather seats in very good shape. I honestly don’t think these got used very much. No major wear to speak of.The center armrest folds down as expected, as do the seats themselves.   </li>
+<li>Seat back pockets are both present and in good shape (surprisingly not all stretched out like is common on the E9x, etc)  </li>
+<li>The rear mats are standard BMW carpet mats, both of which have some light staining but clean up and present well. The carpet underneath is in good shape.  </li>
+<li>The rear center console is intact and the power ports work correctly.  </li>
+<li>Both rear door panels are in good condition and the window switches and windows work as expected, including one-touch up/down.</li>
+</ul>
+<h4>Cargo Area</h4>
+<ul>
+<li>Cargo cover is present, including both the rear compartment cover and the vertical divider net, which both work as expected.   </li>
+<li>Carpet in cargo area has some staining / signs of use. Both myself and previous owner have used this car to transport various things, it has been taken care of but shows some signs of use.  </li>
+<li>Both rear floor wells open and close as expected, and the grocery divider is intact and working.  </li>
+<li>All rear side covers are present and in relatively good condition (same as the carpet, some of them have some signs of use on them, but they are all solid and stay in place, etc)  </li>
+<li>The interior of the rear hatch has the expected scuffs and scratches from transporting materials and pets in the back, but it is by no means egregious. Just listing for transparency.</li>
+</ul>
+<h4>Headliner / Sunroof</h4>
+<ul>
+<li>The headliner in general is in good shape. It does not show any major signs of sagging.  </li>
+<li>There is a set of minor stains over the rear cargo area, I am not sure exactly where they came from.  </li>
+<li>The interior sunroof shade headliner is completely detached/removed. The previous owner stated that this occurred when the sunroof drains backed up in appx. 2019-2020.   </li>
+<li>The sunroof shade functions as expected, it retracts and extends with no issues.  </li>
+<li>The panoramic sunroof functions as expected, both tilt and sliding.</li>
+</ul></div>
+    <span class="gallery-label">Interior &mdash; Photos</span>
+    <div class="gallery" id="gallery-interior"><figure class="photo-card" data-group="interior" data-index="0" tabindex="0" role="button" aria-label="Open photo: Aftermarket 8” CarPlay-enabled screen, integrated into the factory dash opening.">
+        <img src="images/IMG_1842.jpeg" alt="Aftermarket 8” CarPlay-enabled screen, integrated into the factory dash opening." loading="lazy">
+        <figcaption>Aftermarket 8” CarPlay-enabled screen, integrated into the factory dash opening.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="1" tabindex="0" role="button" aria-label="Open photo: Dashboard and center stack, view from the driver's seat.">
+        <img src="images/IMG_1841.jpeg" alt="Dashboard and center stack, view from the driver's seat." loading="lazy">
+        <figcaption>Dashboard and center stack, view from the driver's seat.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="2" tabindex="0" role="button" aria-label="Open photo: Rear cabin, wide view showing the panoramic sunroof glass and rear seat space.">
+        <img src="images/IMG_1829.jpeg" alt="Rear cabin, wide view showing the panoramic sunroof glass and rear seat space." loading="lazy">
+        <figcaption>Rear cabin, wide view showing the panoramic sunroof glass and rear seat space.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="3" tabindex="0" role="button" aria-label="Open photo: Rear seat close-up — Gray Dakota leather, minimal wear.">
+        <img src="images/IMG_1828.jpeg" alt="Rear seat close-up — Gray Dakota leather, minimal wear." loading="lazy">
+        <figcaption>Rear seat close-up — Gray Dakota leather, minimal wear.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="4" tabindex="0" role="button" aria-label="Open photo: Full front interior view — steering wheel, gauge cluster, and center console.">
+        <img src="images/IMG_1827.jpeg" alt="Full front interior view — steering wheel, gauge cluster, and center console." loading="lazy">
+        <figcaption>Full front interior view — steering wheel, gauge cluster, and center console.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="5" tabindex="0" role="button" aria-label="Open photo: Driver's door open, showing door panel and sill.">
+        <img src="images/IMG_1826.jpeg" alt="Driver's door open, showing door panel and sill." loading="lazy">
+        <figcaption>Driver's door open, showing door panel and sill.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="6" tabindex="0" role="button" aria-label="Open photo: Rear door open, showing rear seat and door panel.">
+        <img src="images/IMG_1825.jpeg" alt="Rear door open, showing rear seat and door panel." loading="lazy">
+        <figcaption>Rear door open, showing rear seat and door panel.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="7" tabindex="0" role="button" aria-label="Open photo: Front door open, opposite angle.">
+        <img src="images/IMG_1824.jpeg" alt="Front door open, opposite angle." loading="lazy">
+        <figcaption>Front door open, opposite angle.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="8" tabindex="0" role="button" aria-label="Open photo: Rear door open, opposite angle, showing rear legroom.">
+        <img src="images/IMG_1823.jpeg" alt="Rear door open, opposite angle, showing rear legroom." loading="lazy">
+        <figcaption>Rear door open, opposite angle, showing rear legroom.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="interior" data-index="9" tabindex="0" role="button" aria-label="Open photo: Cargo area with the rear cargo cover in place.">
+        <img src="images/IMG_1822.jpeg" alt="Cargo area with the rear cargo cover in place." loading="lazy">
+        <figcaption>Cargo area with the rear cargo cover in place.</figcaption>
+    </figure></div>
+  </section>
+
+  <section id="exterior">
+    <div class="section-head"><span class="num">03</span><h2>Exterior</h2></div>
+    <div class="prose"><h4>Front Bumper / Hood / Windshield</h4>
+<ul>
+<li>The front bumper has expected signs of wear including some parking scuffs/nicks and rock chips / sandblasting. It is not cracked anywhere, fits as expected, and is in generally good condition.I believe it was repainted sometime around 2020.   </li>
+<li>Both front fog lights are present and work as expected. They both show signs of sandblasting from age.  </li>
+<li>The Driver’s side headlight is almost new and presents as such. I believe it was replaced sometime around 2020. The passenger’s headlight shows some signs of age, but nothing major. Both headlights work completely as expected, including xenon low and high beams, halogen high beams, turn signals, parking lights, and angel eyes. The headlights are adaptive and this function works as expected (headlights swivel to follow steering angle). Also the car has headlight washers and they do work, however I have them coded out as I think they’re far more of a pain than they are worth.   </li>
+<li>The hood is in relatively good shape with a few minor rock chips but nothing else of note.  </li>
+<li>The windshield is in good shape, is an OEM windshield, and has no cracks or chips that I am aware of. The wipers work as expected, including the sprayers. </li>
+</ul>
+<h4>Left Side</h4>
+<ul>
+<li>The left front fender is in good shape and I believe it to have been repainted around 2020.  </li>
+<li>The left front wheel is straight and in relatively good shape, but has some curb rash present.  </li>
+<li>The driver’s door has one small dent roughly in its center which I believe was caused by a shopping cart or another car door. The driver’s window is in good shape.   </li>
+<li>The left side mirror is in good shape, and both power adjust and power folding work as expected, as well as auto-dim and defrost.  </li>
+<li>The left rear door is in good shape, including the window.  </li>
+<li>The left rear quarter panel is in good shape, including the window.  </li>
+<li>The left rear wheel is straight and in relatively good shape, but with small curb rash present. </li>
+</ul>
+<h4 id="right-side">Right Side</h4>
+<ul>
+<li>The right front fender is in good shape.  </li>
+<li>The right front wheel is straight and in decent condition. This wheel has the most curb rash of any of them (assume the person I bought the set of wheels from had trouble parallel parking).  </li>
+<li>The front passenger door is in relatively good shape. There is a series of scratches down low on the door where I believe the car was hit by either a shopping cart or another car in a parking lot. There is no sheet metal damage, but there are some scratches and marring visible in the paint. The window is in good shape.  </li>
+<li>The right side mirror is in good condition and all functions work as expected (power adjustment, power fold, auto-dim, and defrost).  </li>
+<li>The right rear door is in good shape, including the window.  </li>
+<li>The right rear quarter panel is damaged in the wheel arch area.This is from the previous owner’s wife hitting their garage side. This is the only non-trivial sheet metal damage on the car. I had intended to have a PDR guy take a look at this, but never got around to it.  </li>
+<li>The right rear wheel is straight and in relatively good shape. A moderate amount of curb rash is present. </li>
+</ul>
+<h4>Rear Bumper / Hatch / Roof</h4>
+<ul>
+<li>The rear bumper has some damage on the right side which I believe is coincident with the damage to the right rear quarter panel. It is overall minor and the bumper still fits straight and presents well. There is also the expected wear along the top section from loading/unloading cargo.   </li>
+<li>Both taillights work as expected, including running lights, brake lights, turn signals, and reverse lights. The third brake light on the hatch also functions as expected.  </li>
+<li>The rear hatch is in good shape. The car is equipped with the power rear liftgate, which opens as expected, however it currently does not close under power (must be done manually). Obviously the pump is working fine as the opening works, so I suspect there may be some issue with the relays controlling it or the valve block. It never bothered me enough to troubleshoot further.   </li>
+<li>The rear hatch window is in good shape, and opens and closes as expected. The rear wiper works as expected, including the sprayer.   </li>
+<li>The roof of the car has some minor dings but is overall in good condition. The car has OEM raised roof rails, which are also in good shape.</li>
+</ul></div>
+    <span class="gallery-label">Exterior &mdash; Photos</span>
+    <div class="gallery" id="gallery-exterior"><figure class="photo-card" data-group="exterior" data-index="0" tabindex="0" role="button" aria-label="Open photo: N54 twin-turbo inline-6 under the hood — clean bay, no aftermarket piping, OEM battery and coolant expansion tank visible.">
+        <img src="images/IMG_1843.jpeg" alt="N54 twin-turbo inline-6 under the hood — clean bay, no aftermarket piping, OEM battery and coolant expansion tank visible." loading="lazy">
+        <figcaption>N54 twin-turbo inline-6 under the hood — clean bay, no aftermarket piping, OEM battery and coolant expansion tank visible.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="exterior" data-index="1" tabindex="0" role="button" aria-label="Open photo: Front fascia in Titanium Silver Metallic — adaptive xenon headlights, OEM raised roof rails visible above.">
+        <img src="images/IMG_1836.jpeg" alt="Front fascia in Titanium Silver Metallic — adaptive xenon headlights, OEM raised roof rails visible above." loading="lazy">
+        <figcaption>Front fascia in Titanium Silver Metallic — adaptive xenon headlights, OEM raised roof rails visible above.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="exterior" data-index="2" tabindex="0" role="button" aria-label="Open photo: Front three-quarter view showing the Style 237 wheels and Pirelli runflats.">
+        <img src="images/IMG_1835.jpeg" alt="Front three-quarter view showing the Style 237 wheels and Pirelli runflats." loading="lazy">
+        <figcaption>Front three-quarter view showing the Style 237 wheels and Pirelli runflats.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="exterior" data-index="3" tabindex="0" role="button" aria-label="Open photo: Front three-quarter, opposite angle, in the driveway.">
+        <img src="images/IMG_1834.jpeg" alt="Front three-quarter, opposite angle, in the driveway." loading="lazy">
+        <figcaption>Front three-quarter, opposite angle, in the driveway.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="exterior" data-index="4" tabindex="0" role="button" aria-label="Open photo: Rear three-quarter — 535xi Touring badge, panoramic sunroof glass, and roof rails visible.">
+        <img src="images/IMG_1833.jpeg" alt="Rear three-quarter — 535xi Touring badge, panoramic sunroof glass, and roof rails visible." loading="lazy">
+        <figcaption>Rear three-quarter — 535xi Touring badge, panoramic sunroof glass, and roof rails visible.</figcaption>
+    </figure>
+<figure class="photo-card" data-group="exterior" data-index="5" tabindex="0" role="button" aria-label="Open photo: Rear three-quarter, opposite angle, showing the dual exhaust tips.">
+        <img src="images/IMG_1832.jpeg" alt="Rear three-quarter, opposite angle, showing the dual exhaust tips." loading="lazy">
+        <figcaption>Rear three-quarter, opposite angle, showing the dual exhaust tips.</figcaption>
+    </figure></div>
+  </section>
+
+  <section id="powertrain">
+    <div class="section-head"><span class="num">04</span><h2>Powertrain</h2></div>
+    <div class="prose"><h4>Engine</h4>
+<ul>
+<li>The car has the N54 twin turbo engine, which runs quite well. I have never had any of the common N54 issues with this car - trouble starting, rough idle, HPFP issues, etc.   </li>
+<li>The previous owner had the HPFP recall completed by BMW and the car has never given me any fueling issues.   </li>
+<li>I am not certain what index of injectors are installed in the car as I have never felt compelled to take them out and check. They have not given me any issues and I don’t have any reason to believe that any of them are leaking / failing.  </li>
+<li>Neither turbo smokes or otherwise is acting up. The car makes boost and responds as expected.   </li>
+<li>One of the turbos exhibits a very minor amount of wastegate rattle on deceleration only. This is a common N54 issue and at the current level of rattle is specifically regarded as normal operation by BMW.  </li>
+<li>The intake valves were last walnut-blasted by the previous owner at appx. 100k miles.   </li>
+<li>The timing chain and guides appear to be in good condition - there is no cold start rattle, and I have not observed any pieces of guides in the oil.  </li>
+<li>The VANOS solenoids operate as expected, no timing codes or symptoms of failure are present.  </li>
+<li>The Oil Filter Housing gasket is in good condition and does not leak.  </li>
+<li>The cooling system was overhauled by the previous owner at appx. 100k miles, including a new water pump, thermostat, expansion tank, and hoses.   </li>
+<li>The Serpentine Belt and all idlers/tensioners are in good shape, I replaced these in 2024 as preventative maintenance when I purchased the car.   </li>
+<li>The spark plugs and coils are of unknown age, and I have a new set of both (OE Bosch plugs and Denso coils) that I intend to either install before sale or convey to the next owner.   </li>
+<li>The oil has been changed every 5,000 miles under my ownership. I believe the previous owner followed the factory CBS (condition based service) guidelines.  </li>
+<li>There are two minor oil leaks that I am aware of:  </li>
+<li>The valve cover gasket is seeping oil on the passenger side. This oil drips onto the turbo manifold and presents a smell of burnt oil after hard driving. I have a new valve cover gasket (OE Elring) which I intend to install to rectify this issue before sale, otherwise I will convey it to the new owner.  </li>
+<li>The oil pan gasket is leaking slowly at several places around the upper edge where it meets the bottom of the engine block.   </li>
+<li>All lower covers are present and in good condition. </li>
+</ul>
+<h4>Transmission / Driveline</h4>
+<ul>
+<li>The transmission (ZF 6HP) works as expected and does not indicate any trouble codes. I have noticed the beginning of some torque converter shudder, I do not believe the transmission fluid has ever been changed. I intended to do a transmission fluid service on the car to rectify this issue, but have not done so yet due to lack of access to a lift to perform the service.   </li>
+<li>The transmission does not have any noticeable leaks.  </li>
+<li>The rear driveshaft is in good shape, along with the coupling ring (Guibo) and center support bearing.   </li>
+<li>The transfer case / xDrive system is in good condition and works as expected. The car will reliably transfer power forward when needed.   </li>
+<li>The front driveshaft is in good shape.  </li>
+<li>The front and rear differentials both work as expected. No codes for clutch or fluid conditions have been observed. Neither have any noticeable leaks. The rear diff mount seems to be in good shape (not cracked or making the common clunk noise on acceleration).  </li>
+<li>The CV axle boots are all in good shape (not torn or leaking) along with the CV axles themselves. </li>
+</ul>
+<h4>Suspension</h4>
+<ul>
+<li>I had the car aligned in 2024 soon after purchasing due to a pull to the left when driving on the highway. Ever since then, the alignment has been good - no pulls, wandering, or suspension vibration at speed.  </li>
+<li>The shocks on all four corners are in good shape. None seem to be blown, leaking, making noise, or otherwise showing signs of failure.  </li>
+<li>The rear air suspension works as expected, including auto-leveling.   </li>
+<li>The front sway bar endlinks are in good condition.  </li>
+<li>The front lower control arm bushings are starting to show signs of wear and probably should be replaced sometime soon.  </li>
+<li>The rear way bar endlinks are in good condition.  </li>
+<li>The rear suspension bushings are starting to show some signs of wear, but not bad enough to replace yet.  </li>
+<li>The brakes are in good condition, with plenty of life left on pads and rotors. The brake fluid was flushed in October of 2024. </li>
+</ul>
+<h4>Undercarriage / Exhaust</h4>
+<ul>
+<li>The underside of the car is clean and free of any major rust. Minor surface rust can be observed on various components, but the frame rails, subframe, and underbody are all free of rust.   </li>
+<li>The exhaust is in good shape with no leaks, and the exhaust flap valve works as expected. I currently have it disabled (so it is always open) because I like the sound, but would be happy to revert to stock behavior before sale if so desired.</li>
+</ul></div>
+  </section>
+
+  <section id="electronics">
+    <div class="section-head"><span class="num">05</span><h2>Electronics</h2></div>
+    <div class="prose"><h4>General</h4>
+<ul>
+<li>The battery was replaced in 2024 soon after I purchased the vehicle. It is a Duracell H8 AGM battery and was coded to the vehicle when I installed it.  </li>
+<li>The alternator is relatively new (previous owner stated it had recently died and left his wife stranded, so he had it replaced). I don’t know exactly when, but I suspect this was in 2023-2024. I also assume this failure took out the battery which led to my replacing shortly after purchase.  </li>
+<li>I have replaced most of the interior/exterior light bulbs with LED where applicable.  </li>
+<li>The Angel Eye bulbs were replaced with LEDs, as were the front side-markers.   </li>
+<li>The errors due to hot and cold checking of these bulbs have been coded out.  </li>
+<li>TPMS is currently coded out and the module disconnected.   </li>
+<li>This is due to the Style 237s being F10 wheels and using the newer style TPMS sensors, which are not compatible with the receiver in this car.   </li>
+<li>I had intended to get the correct TPMS sensors installed in the wheels when I replaced the tires, but they still have some life left and I haven’t done so yet..  </li>
+<li>The module is still present in the rear of the car and can be reconnected before sale if desired. </li>
+</ul>
+<h4>Comfort / Convenience Features</h4>
+<ul>
+<li>The car has parking distance control in both front and rear. All sensors work as expected.  </li>
+<li>I have two keys which will be conveyed with the vehicle. Both work as expected.  </li>
+<li>The car has keyless entry, but not comfort access (you still need to use the key to unlock and start the car).  </li>
+<li>I have coded convenience opening and closing, so you can put the windows up and down with the key fob by holding lock or unlock respectively.   </li>
+<li>The keyless entry Diversity Antenna was replaced in 2024 with a genuine BMW replacement. The system works as expected.  </li>
+<li>The cruise control works as expected.</li>
+</ul>
+<h4>Audio</h4>
+<ul>
+<li>The car does not have factory navigation. Instead it had the smaller non-nav screen. I installed an aftermarket 8” screen which works with the original in-car systems but adds CarPlay / Android Auto. The original screen will be included with the car and can be reinstalled before sale if desired.   </li>
+<li>All of the speakers work as expected.</li>
+</ul></div>
+  </section>
+
+  <section id="disclosure">
+    <div class="disclosure-section">
+      <div class="hazard-bar"></div>
+      <div class="disclosure-inner">
+        <div class="disclosure-head">
+          <h2>Full Disclosure</h2>
+          <span class="disclosure-stamp">As Inspected &middot; Seller-Documented</span>
+        </div>
+        <p class="disclosure-intro">Everything below is called out elsewhere in this listing too &mdash; it's collected here in one place so nothing gets missed. None of it is hidden; ask about any of it.</p>
+
+        <div class="disclosure-list">
+          <div class="disclosure-row">
+            <span class="d-status">Repaired</span>
+            <span class="d-desc"><b>Deer-strike bodywork (~2020):</b> front bumper, driver's fender, hood, and driver's headlight were repaired/replaced by the previous owner prior to my purchase.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Unrepaired</span>
+            <span class="d-desc"><b>Right rear quarter panel / wheel arch:</b> damage from the previous owner's wife backing into their garage. This is the only non-trivial sheet metal damage on the car, with minor coincident damage to the right side of the rear bumper. Never had PDR looked at.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Cosmetic</span>
+            <span class="d-desc"><b>Sunroof shade headliner:</b> fully detached due to a sunroof drain backup around 2019&ndash;2020. The shade itself still extends/retracts normally &mdash; this only affects the fabric lining underneath the glass.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Cosmetic</span>
+            <span class="d-desc"><b>Driver's &amp; passenger door marks:</b> a small centered dent on the driver's door and low scratches/marring on the passenger door, both believed caused by shopping carts or adjacent car doors in parking lots. No sheet metal damage on either.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Minor leak</span>
+            <span class="d-desc"><b>Valve cover gasket:</b> seeping oil on the passenger side, drips onto the turbo manifold and can produce a burnt-oil smell after hard driving. New OE Elring gasket on hand, to be installed before sale or conveyed to the buyer.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Minor leak</span>
+            <span class="d-desc"><b>Oil pan gasket:</b> slow seep at several points along the upper edge where it meets the block.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Monitoring</span>
+            <span class="d-desc"><b>Transmission fluid / torque converter shudder:</b> the ZF 6HP shows no fault codes, but fluid has likely never been changed and early torque converter shudder is present. A fluid service is planned but not yet completed.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Known quirk</span>
+            <span class="d-desc"><b>Wastegate rattle:</b> one turbo exhibits minor rattle on deceleration only &mdash; a well-documented N54 characteristic, and BMW's own service bulletin describes this as normal wastegate valve operation in many cases rather than a fault.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Disabled</span>
+            <span class="d-desc"><b>TPMS:</b> currently coded out and the module disconnected, since the Style 237 (F10-style) wheels use newer sensors incompatible with this car's receiver. Module is present and can be reconnected with correct sensors.</span>
+          </div>
+          <div class="disclosure-row">
+            <span class="d-status">Functional quirk</span>
+            <span class="d-desc"><b>Power liftgate:</b> opens under power as expected but currently must be closed manually. Pump is confirmed working (since opening works); suspected relay or valve block issue, not diagnosed further.</span>
+          </div>
+        </div>
+
+        <span class="gallery-label">Disclosure &mdash; Photos</span>
+        <div class="disclosure-gallery">
+          <figure class="disclosure-card" data-group="disclosure" data-index="0" tabindex="0" role="button" aria-label="Open photo: Front Passenger Door">
+        <img src="images/IMG_1839.jpeg" alt="Front Passenger Door" loading="lazy">
+        <figcaption>
+            <span class="d-title">Front Passenger Door</span>
+            <span class="d-tag">Cosmetic only</span>
+            <span class="d-text">Low scratches and marring from a prior parking-lot contact. No sheet metal damage — paint and marring only.</span>
+        </figcaption>
+    </figure>
+<figure class="disclosure-card" data-group="disclosure" data-index="1" tabindex="0" role="button" aria-label="Open photo: Right Rear Quarter Panel">
+        <img src="images/IMG_1838.jpeg" alt="Right Rear Quarter Panel" loading="lazy">
+        <figcaption>
+            <span class="d-title">Right Rear Quarter Panel</span>
+            <span class="d-tag">Unrepaired</span>
+            <span class="d-text">The one non-trivial sheet metal damage on the car, from the previous owner’s wife backing into their garage. Coincident with minor rear bumper damage on the same side.</span>
+        </figcaption>
+    </figure>
+<figure class="disclosure-card" data-group="disclosure" data-index="2" tabindex="0" role="button" aria-label="Open photo: Driver’s Door">
+        <img src="images/IMG_1837.jpeg" alt="Driver’s Door" loading="lazy">
+        <figcaption>
+            <span class="d-title">Driver’s Door</span>
+            <span class="d-tag">Cosmetic only</span>
+            <span class="d-text">Small dent roughly centered in the door, believed caused by a shopping cart or another car door.</span>
+        </figcaption>
+    </figure>
+<figure class="disclosure-card" data-group="disclosure" data-index="3" tabindex="0" role="button" aria-label="Open photo: Sunroof Shade Headliner">
+        <img src="images/IMG_1831.jpeg" alt="Sunroof Shade Headliner" loading="lazy">
+        <figcaption>
+            <span class="d-title">Sunroof Shade Headliner</span>
+            <span class="d-tag">Cosmetic only</span>
+            <span class="d-text">Fully detached following a sunroof drain backup around 2019–2020. The shade mechanism itself still retracts and extends normally — this is a cosmetic interior lining issue only.</span>
+        </figcaption>
+    </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  2008 BMW 535xi Sport Wagon (E61) &middot; VIN WBAPT73588CX01883 &middot; Listed by owner
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
+</div>
+
+<script>
+const DATA = {"exterior": [{"src": "images/IMG_1843.jpeg", "caption": "N54 twin-turbo inline-6 under the hood \u2014 clean bay, no aftermarket piping, OEM battery and coolant expansion tank visible."}, {"src": "images/IMG_1836.jpeg", "caption": "Front fascia in Titanium Silver Metallic \u2014 adaptive xenon headlights, OEM raised roof rails visible above."}, {"src": "images/IMG_1835.jpeg", "caption": "Front three-quarter view showing the Style 237 wheels and Pirelli runflats."}, {"src": "images/IMG_1834.jpeg", "caption": "Front three-quarter, opposite angle, in the driveway."}, {"src": "images/IMG_1833.jpeg", "caption": "Rear three-quarter \u2014 535xi Touring badge, panoramic sunroof glass, and roof rails visible."}, {"src": "images/IMG_1832.jpeg", "caption": "Rear three-quarter, opposite angle, showing the dual exhaust tips."}], "interior": [{"src": "images/IMG_1842.jpeg", "caption": "Aftermarket 8\u201d CarPlay-enabled screen, integrated into the factory dash opening."}, {"src": "images/IMG_1841.jpeg", "caption": "Dashboard and center stack, view from the driver's seat."}, {"src": "images/IMG_1829.jpeg", "caption": "Rear cabin, wide view showing the panoramic sunroof glass and rear seat space."}, {"src": "images/IMG_1828.jpeg", "caption": "Rear seat close-up \u2014 Gray Dakota leather, minimal wear."}, {"src": "images/IMG_1827.jpeg", "caption": "Full front interior view \u2014 steering wheel, gauge cluster, and center console."}, {"src": "images/IMG_1826.jpeg", "caption": "Driver's door open, showing door panel and sill."}, {"src": "images/IMG_1825.jpeg", "caption": "Rear door open, showing rear seat and door panel."}, {"src": "images/IMG_1824.jpeg", "caption": "Front door open, opposite angle."}, {"src": "images/IMG_1823.jpeg", "caption": "Rear door open, opposite angle, showing rear legroom."}, {"src": "images/IMG_1822.jpeg", "caption": "Cargo area with the rear cargo cover in place."}], "disclosure": [{"src": "images/IMG_1839.jpeg", "caption": "Front Passenger Door \u2014 Low scratches and marring from a prior parking-lot contact. No sheet metal damage \u2014 paint and marring only."}, {"src": "images/IMG_1838.jpeg", "caption": "Right Rear Quarter Panel \u2014 The one non-trivial sheet metal damage on the car, from the previous owner\u2019s wife backing into their garage. Coincident with minor rear bumper damage on the same side."}, {"src": "images/IMG_1837.jpeg", "caption": "Driver\u2019s Door \u2014 Small dent roughly centered in the door, believed caused by a shopping cart or another car door."}, {"src": "images/IMG_1831.jpeg", "caption": "Sunroof Shade Headliner \u2014 Fully detached following a sunroof drain backup around 2019\u20132020. The shade mechanism itself still retracts and extends normally \u2014 this is a cosmetic interior lining issue only."}]};
+let currentGroup = null;
+let currentIndex = 0;
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+
+function openLightbox(group, index) {
+  currentGroup = group;
+  currentIndex = index;
+  render();
+  lightbox.classList.add('open');
+}
+function render() {
+  const item = DATA[currentGroup][currentIndex];
+  lightboxImg.src = item.src;
+  lightboxImg.alt = item.caption;
+  lightboxCaption.textContent = item.caption;
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+}
+function next() {
+  currentIndex = (currentIndex + 1) % DATA[currentGroup].length;
+  render();
+}
+function prev() {
+  currentIndex = (currentIndex - 1 + DATA[currentGroup].length) % DATA[currentGroup].length;
+  render();
+}
+
+document.querySelectorAll('[data-group]').forEach(el => {
+  el.addEventListener('click', () => {
+    openLightbox(el.dataset.group, parseInt(el.dataset.index, 10));
+  });
+  el.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openLightbox(el.dataset.group, parseInt(el.dataset.index, 10));
+    }
+  });
+});
+
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-next').addEventListener('click', next);
+document.getElementById('lightbox-prev').addEventListener('click', prev);
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') next();
+  if (e.key === 'ArrowLeft') prev();
+});
+</script>
+
+</body>
+</html>
